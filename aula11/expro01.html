@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Proposto 01</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Digite seu país: <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar() {
+            var pais = window.document.getElementById('pais')
+            var nac = window.document.getElementById('res')
+            var resp = (pais.value)
+            if (resp == 'Brasil') {
+               nac.innerText = 'Você é brasileiro' 
+            } else {
+                nac.innerText = 'Você é estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
